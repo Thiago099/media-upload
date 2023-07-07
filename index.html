@@ -10,7 +10,19 @@
     <div id="app"></div>
     <input type="file" accept="video/*, image/*" id="file">
     <script>
-      file.onchange = event => alert(event.target.files[0].type)
+    file.onchange = event => {
+      const file = event.target.files[0]
+
+      const fileDetails = {
+        name: file.name,
+        size: file.size,
+        type: file.type
+      };
+
+      const fileDetailsString = JSON.stringify(fileDetails);
+
+      document.write(fileDetailsString)
+    }
     </script>
   </body>
 </html>

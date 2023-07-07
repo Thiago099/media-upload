@@ -17,7 +17,7 @@ Com esta configuração o próprio iPhone faz a conversão na hora de fazer o up
 
 <input type="file" accept="video/*, image/*" id="file">
 <script>
-    file.onchange = event => alert(event.target.files[0].type)
+    file.onchange = event => console.log(JSON.stringify(event.target.files[0]))
 </script>
 
 ```
