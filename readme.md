@@ -10,6 +10,10 @@ npm run dev
 
 ```
 
+ou
+
+https://thiago099.github.io/media-upload/
+
 
 Com esta configuração o próprio iPhone faz a conversão na hora de fazer o upload
 
