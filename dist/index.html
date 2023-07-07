@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/media-upload/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <input type="file" accept="video/*, image/*" id="file">
+    <script>
+    file.onchange = event => {
+      const file = event.target.files[0]
+
+      const fileDetails = {
+        name: file.name,
+        size: file.size,
+        type: file.type
+      };
+
+      const fileDetailsString = JSON.stringify(fileDetails);
+
+      document.write(fileDetailsString)
+    }
+    </script>
+  </body>
+</html>
